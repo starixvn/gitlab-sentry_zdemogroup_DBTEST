@@ -34,24 +34,4 @@ BEGIN;
 	OPTION (MAXRECURSION 25); 
 END;
 GO
-EXECUTE	sys.sp_addextendedproperty
-			@name		= N'MS_Description'
-		,	@value		= N'Stored procedure using a recursive query to return the direct and indirect employees of the specified manager.'
-		,	@level0type	= N'SCHEMA'
-		,	@level0name	= N'dbo'
-		,	@level1type	= N'PROCEDURE'
-		,	@level1name	= N'uspGetManagerEmployees'
-		;
-
-EXECUTE	sys.sp_addextendedproperty
-			@name		= N'MS_Description'
-		,	@value		= N'Input parameter for the stored procedure uspGetManagerEmployees. Enter a valid BusinessEntityID of the manager from the HumanResources.Employee table.'
-		,	@level0type	= N'SCHEMA'
-		,	@level0name	= N'dbo'
-		,	@level1type	= N'PROCEDURE'
-		,	@level1name	= N'uspGetManagerEmployees'
-		,	@level2type	= N'PARAMETER'
-		,	@level2name	= N'@BusinessEntityID'
-		;
-GO
 /*<info serverAlias="DBTEST-AdventureWorks2008R2" executers="" viewers="" isFunction="0" isNested="0"></info>*/

@@ -36,35 +36,4 @@ BEGIN;
 	OPTION (MAXRECURSION 25); 
 END;
 GO
-EXECUTE	sys.sp_addextendedproperty
-			@name		= N'MS_Description'
-		,	@value		= N'Stored procedure using a recursive query to return all components or assemblies that directly or indirectly use the specified ProductID.'
-		,	@level0type	= N'SCHEMA'
-		,	@level0name	= N'dbo'
-		,	@level1type	= N'PROCEDURE'
-		,	@level1name	= N'uspGetWhereUsedProductID'
-		;
-
-EXECUTE	sys.sp_addextendedproperty
-			@name		= N'MS_Description'
-		,	@value		= N'Input parameter for the stored procedure uspGetWhereUsedProductID. Enter a valid ProductID from the Production.Product table.'
-		,	@level0type	= N'SCHEMA'
-		,	@level0name	= N'dbo'
-		,	@level1type	= N'PROCEDURE'
-		,	@level1name	= N'uspGetWhereUsedProductID'
-		,	@level2type	= N'PARAMETER'
-		,	@level2name	= N'@StartProductID'
-		;
-
-EXECUTE	sys.sp_addextendedproperty
-			@name		= N'MS_Description'
-		,	@value		= N'Input parameter for the stored procedure uspGetWhereUsedProductID used to eliminate components not used after that date. Enter a valid date.'
-		,	@level0type	= N'SCHEMA'
-		,	@level0name	= N'dbo'
-		,	@level1type	= N'PROCEDURE'
-		,	@level1name	= N'uspGetWhereUsedProductID'
-		,	@level2type	= N'PARAMETER'
-		,	@level2name	= N'@CheckDate'
-		;
-GO
 /*<info serverAlias="DBTEST-AdventureWorks2008R2" executers="" viewers="" isFunction="0" isNested="0"></info>*/
