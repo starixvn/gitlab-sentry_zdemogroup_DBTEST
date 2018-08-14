@@ -16,4 +16,3 @@ BEGIN
 	RETURN (@ReturnValue);
 END;
 GO
-/*<info serverAlias="DBTEST-AdventureWorks2008R2" executers="" viewers="" isFunction="1" isNested="1"></info>*/
