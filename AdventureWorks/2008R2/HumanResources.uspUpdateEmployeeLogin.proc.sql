@@ -16,8 +16,7 @@ BEGIN;
 	BEGIN TRY
 		UPDATE	HumanResources.Employee WITH (ROWLOCK)
 		SET	OrganizationNode	= @OrganizationNode 
-		,	LoginID				= @LoginID 
-		,	JobTitle			= @JobTitle 
+		,	LoginID				= @LoginID 	
 		,	HireDate			= @HireDate 
 		,	CurrentFlag			= @CurrentFlag 
 		WHERE	BusinessEntityID = @BusinessEntityID;
