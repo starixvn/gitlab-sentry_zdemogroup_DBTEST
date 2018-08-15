@@ -1,1 +1,1 @@
-AdventureWorks\2008R2\dbo.uspLogError.sql
+AdventureWorks\2008R2\dbo.uspLogError.proc.sql
