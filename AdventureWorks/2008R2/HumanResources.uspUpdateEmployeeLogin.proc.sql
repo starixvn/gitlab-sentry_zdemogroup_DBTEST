@@ -22,7 +22,7 @@ BEGIN;
 		WHERE	BusinessEntityID = @BusinessEntityID;
 	END TRY
 	BEGIN CATCH
-		EXEC dbo.uspLogError;
+		EXEC dbo.uspLogError
 	END CATCH;
 END;
 GO
