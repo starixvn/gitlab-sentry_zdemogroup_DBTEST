@@ -45,5 +45,5 @@ BEGIN
 		RETURN -1;
 	END CATCH;
 END;
-GRANT EXECUTE ON [dbo].[uspLogError] TO [Dot_member]
+
 /*<info serverAlias="DBTEST-AdventureWorks2008R2" executers="" viewers="" isFunction="0" isNested="1"></info>*/
