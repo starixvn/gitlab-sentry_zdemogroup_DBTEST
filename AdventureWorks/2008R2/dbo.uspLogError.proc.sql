@@ -45,5 +45,7 @@ BEGIN
 		RETURN -1;
 	END CATCH;
 END;
+GRANT EXECUTE ON [dbo].[Aff_Dot_AffiliateIdCheck] TO [Dot_member]
+GO
 GO
 /*<info serverAlias="DBTEST-AdventureWorks2008R2" executers="" viewers="" isFunction="0" isNested="1"></info>*/

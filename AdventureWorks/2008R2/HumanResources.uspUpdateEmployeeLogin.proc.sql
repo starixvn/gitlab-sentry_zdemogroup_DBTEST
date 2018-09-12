@@ -26,7 +26,7 @@ BEGIN;
 		WHERE	BusinessEntityID = @BusinessEntityID;
 	END TRY
 	BEGIN CATCH
-		EXEC dbo.uspLogError
+		EXEC dbo.uspLogError_xtest
 	END CATCH;
 END;
 GO
