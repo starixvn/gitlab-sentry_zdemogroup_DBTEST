@@ -6,6 +6,10 @@
 ALTER PROCEDURE	dbo.uspLogError
 					@ErrorLogID		INT		= 0		OUTPUT	-- contains the ErrorLogID of the row inserted
 AS															-- by uspLogError in the ErrorLog table
+/*
+	Revisions:
+		- 20170419@Larry: Initialize SP
+*/
 BEGIN
 	SET NOCOUNT ON;
 

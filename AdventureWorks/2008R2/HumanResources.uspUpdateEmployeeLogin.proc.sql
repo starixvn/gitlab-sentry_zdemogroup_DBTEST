@@ -10,6 +10,10 @@ ALTER PROCEDURE	HumanResources.uspUpdateEmployeeLogin
 					,	@CurrentFlag		dbo.Flag
 WITH EXECUTE AS CALLER
 AS
+/*
+	Revisions:
+		- 20170419@Larry: Initialize SP
+*/
 BEGIN;
 	SET NOCOUNT ON;
 

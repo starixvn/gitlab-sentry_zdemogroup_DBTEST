@@ -7,6 +7,10 @@ GO
 -- it will return without printing any error information.
 ALTER PROCEDURE	dbo.uspPrintError
 AS
+/*
+	Revisions:
+		- 20170419@Larry: Initialize SP
+*/
 BEGIN;
 	SET NOCOUNT ON;
 
