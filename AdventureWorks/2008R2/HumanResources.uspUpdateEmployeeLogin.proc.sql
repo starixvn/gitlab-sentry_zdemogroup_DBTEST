@@ -13,6 +13,8 @@ AS
 /*
 	Revisions:
 		- 20170419@Larry: Initialize SP
+		- 20100123@Henry: Grant execute to Accounting site
+		- 20100730@Henry: Grant execute to bodbExtAccNet
 */
 BEGIN;
 	SET NOCOUNT ON;
