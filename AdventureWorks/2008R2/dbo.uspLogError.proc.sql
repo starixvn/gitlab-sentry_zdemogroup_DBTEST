@@ -1,6 +1,3 @@
-SET ANSI_NULLS ON;
-SET QUOTED_IDENTIFIER ON;
-GO
 -- uspLogError logs error information in the ErrorLog table about the 
 -- error that caused execution to jump to the CATCH block of a 
 -- TRY...CATCH construct. This should be executed from within the scope 
@@ -9,6 +6,10 @@ GO
 ALTER PROCEDURE	dbo.uspLogError
 					@ErrorLogID		INT		= 0		OUTPUT	-- contains the ErrorLogID of the row inserted
 AS															-- by uspLogError in the ErrorLog table
+/*
+	Revisions:
+		- 20170419@Larry: Initialize SP
+*/
 BEGIN
 	SET NOCOUNT ON;
 
@@ -40,9 +41,9 @@ BEGIN
 	END TRY
 	BEGIN CATCH
 		PRINT 'An error occurred in stored procedure uspLogError: ';
-		EXECUTE	dbo.uspPrintError;
+		EXECUTE	dbo.uspPrintError
 		RETURN -1;
 	END CATCH;
 END;
-GO
+
 /*<info serverAlias="DBTEST-AdventureWorks2008R2" executers="" viewers="" isFunction="0" isNested="1"></info>*/

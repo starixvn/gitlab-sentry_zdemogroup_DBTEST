@@ -10,20 +10,25 @@ ALTER PROCEDURE	HumanResources.uspUpdateEmployeeLogin
 					,	@CurrentFlag		dbo.Flag
 WITH EXECUTE AS CALLER
 AS
+/*
+	Revisions:
+		- 20170419@Larry: Initialize SP
+		- 20100123@Henry: Grant execute to Accounting site
+		- 20100730@Henry: Grant execute to bodbExtAccNet
+*/
 BEGIN;
 	SET NOCOUNT ON;
 
 	BEGIN TRY
 		UPDATE	HumanResources.Employee WITH (ROWLOCK)
 		SET	OrganizationNode	= @OrganizationNode 
-		,	LoginID				= @LoginID 
-		,	JobTitle			= @JobTitle 
+		,	LoginID				= @LoginID 	
 		,	HireDate			= @HireDate 
 		,	CurrentFlag			= @CurrentFlag 
 		WHERE	BusinessEntityID = @BusinessEntityID;
 	END TRY
 	BEGIN CATCH
-		EXECUTE	dbo.uspLogError;
+		EXEC dbo.uspLogError
 	END CATCH;
 END;
 GO
