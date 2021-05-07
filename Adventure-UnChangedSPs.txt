@@ -1,2 +1,0 @@
-AdventureWorks\2008R2\dbo.uspLogError.proc.sql
-AdventureWorks\2008R2\dbo.uspPrintError.proc.sql
