@@ -1,4 +1,0 @@
-MS SQL Server
-SQL profiler
-GitLab
-goSQL
