@@ -11,6 +11,7 @@ AS
   
  Revisions:  
 	- 20220418@Tacy: Create SP [Redmine: #12345]
+	- 20220419@Tacy: Modify @start_date from DAY to WEEK [Redmine: #12345]
  
  Param's Explanation:  
  */ 
@@ -21,7 +22,7 @@ BEGIN
 
 	SET @Start_date = DATEADD(WEEK, -3, GETDATE())
 
-	SELECT TOP (50)
+	SELECT TOP (100)
 			m.matchid, l.leaguename
 			, home.teamname home, away.teamname away
 			, eventdate, s.SportName
