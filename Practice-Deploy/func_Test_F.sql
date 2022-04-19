@@ -1,4 +1,4 @@
-/*<info serverAlias="DBAGE-bodb02" executers="bodbAdminNet" viewers="" isFunction="1" isNested="1"></info>*/
+/*<info serverAlias="DBAGE-bodb02" selecters="bodbAdminNet" viewers="" isFunction="1" isNested="1"></info>*/
 
 ALTER FUNCTION dbo.f_Test_F	(@SportType	 SMALLINT)
 RETURNS TABLE
