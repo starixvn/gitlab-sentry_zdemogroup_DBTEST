@@ -1,1 +1,1 @@
-Practice-Deploy\sp_Test_A.sql 
+Practice-Deploy\sp_Test_A.sql
