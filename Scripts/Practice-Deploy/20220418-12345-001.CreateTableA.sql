@@ -3,11 +3,13 @@
 /*
 	Created: Tacy@20220419
 	Database: DBAGE/bodb02
-	Step 02: Init data into table A [RedmineID: #12345]
+	Step 01: Create table A [RedmineID: #12345]
 */
 USE tempdb
 GO
 
-INSERT INTO ##tmpA (NAME)
-	VALUES ('OANH'),('TACY'),('HUGEN'),('QUEEN')
+CREATE TABLE ##tmpA (
+		ID INT IDENTITY(1,1) PRIMARY KEY
+	,	NAME VARCHAR(300) NOT NULL
+)
 GO
