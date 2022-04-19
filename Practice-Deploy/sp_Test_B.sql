@@ -5,7 +5,7 @@ ALTER PROCEDURE [dbo].[sp_Test_B]
 AS
 /*  
  Created: 20220418@Tacy 
- Task : Get top 100 Match is running within two days by @SportType  
+ Task : Get top 100 Match is completed within two days by @SportType  
  DB: DBAGE/bodb02  
  Original:  
   
