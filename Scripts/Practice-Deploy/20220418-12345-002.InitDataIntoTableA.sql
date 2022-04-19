@@ -1,9 +1,9 @@
 /*<info serverAlias="DBAGE-bodb02"></info>*/
 
 /*
-	Step 01: Create table A
 	Created: Tacy@20220419
 	Database: DBAGE/bodb02
+	Step 01: Create table A [RedmineID: #12345]
 */
 USE tempdb
 GO
