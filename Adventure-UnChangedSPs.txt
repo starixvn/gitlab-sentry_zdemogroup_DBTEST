@@ -1,2 +1,1 @@
 Practice-Deploy\sp_Test_A.sql
-AdventureWorks\2008R2\dbo.uspLogError.proc.sql
