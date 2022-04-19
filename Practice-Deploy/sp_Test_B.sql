@@ -5,12 +5,13 @@ ALTER PROCEDURE [dbo].[sp_Test_B]
 AS
 /*  
  Created: 20220418@Tacy 
- Task : Get top 100 Match is running within two days by @SportType  
+ Task : Get top 100 Match is completed within two days by @SportType  
  DB: DBAGE/bodb02  
  Original:  
   
  Revisions:  
 	- 20220418@Tacy: Create SP [Redmine: #12345]
+	- 20220419@Tacy: Modify @start_date from DAY to WEEK [Redmine: #12345]
  
  Param's Explanation:  
  */ 
@@ -19,7 +20,7 @@ BEGIN
 	
 	DECLARE @Start_date DATE
 
-	SET @Start_date = DATEADD(DAY, -3, GETDATE())
+	SET @Start_date = DATEADD(WEEK, -3, GETDATE())
 
 	SELECT TOP (100)
 			m.matchid, l.leaguename
