@@ -1,3 +1,5 @@
+/*<info serverAlias="DBAGE-bodb02"></info>*/
+
 /*
 	Step 01: Create table A
 	Created: Tacy@20220419

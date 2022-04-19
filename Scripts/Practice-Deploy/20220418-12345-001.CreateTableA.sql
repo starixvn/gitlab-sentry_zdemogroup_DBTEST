@@ -1,3 +1,5 @@
+/*<info serverAlias="DBAGE-bodb02"></info>*/
+
 /*
 	Step 02: Init data into table A
 	Created: Tacy@20220419
