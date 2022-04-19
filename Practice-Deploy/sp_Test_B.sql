@@ -19,9 +19,9 @@ BEGIN
 	
 	DECLARE @Start_date DATE
 
-	SET @Start_date = DATEADD(DAY, -3, GETDATE())
+	SET @Start_date = DATEADD(WEEK, -3, GETDATE())
 
-	SELECT TOP (100)
+	SELECT TOP (50)
 			m.matchid, l.leaguename
 			, home.teamname home, away.teamname away
 			, eventdate, s.SportName
