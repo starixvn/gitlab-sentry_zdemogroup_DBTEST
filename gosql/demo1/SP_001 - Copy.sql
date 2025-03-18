@@ -20,5 +20,7 @@ BEGIN
 	SELECT 003 AS B
 
 	----new one
+
+	--new two
 END
 GO
