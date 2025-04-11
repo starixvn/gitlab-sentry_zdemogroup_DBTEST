@@ -9,6 +9,7 @@ AS
 
 	Revisions:
 		- 20240205@Tacy: Initial SP [RedmineID: #000]
+		- 20250417@Tacy: Initial SP [RedmineID: #123]
 
 	Param's Explanation::	
 
@@ -18,6 +19,6 @@ BEGIN
 	
 	SELECT 002 AS A
 
-	SELECT 003 AS B
+	SELECT 003 AS C
 END
 GO
