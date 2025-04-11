@@ -1,7 +1,9 @@
+/*<info serverAlias="DBCUST-CUSTDB" executers="svc_tig" viewers="" isFunction="0"></info>*/
 ALTER PROCEDURE dbo.SP_001
 AS
 
 BEGIN
-	SET NOCOUNT ON
+	SET NOCOUNT ON;
+	select 1
 END
 GO
