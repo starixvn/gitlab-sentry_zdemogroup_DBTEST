@@ -5,5 +5,6 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 	select 1
+	select 2
 END
 GO
