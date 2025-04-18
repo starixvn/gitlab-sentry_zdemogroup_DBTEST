@@ -10,6 +10,7 @@ AS
 	Revisions:
 		- 20240205@Tacy: Initial SP [RedmineID: #000]
 		- 20240206@Jenny: Initial SP [RedmineID: #123]
+		- 20240206@Tacy: Initial SP [RedmineID: #123]
 
 	Param's Explanation:
 
@@ -20,5 +21,7 @@ BEGIN
 	SELECT 002 AS A
 
 	SELECT 003 AS C
+	SELECT 004 AS C
+
 END
 GO
