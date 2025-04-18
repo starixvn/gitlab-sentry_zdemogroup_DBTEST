@@ -1,4 +1,4 @@
-/*<info serverAlias="DBACC-bodb02" executers="wsv_lap" viewers="vnteam" isFunction="0"></info>*/
+/*<info serverAlias="DBACC-bodb02" executers="wsv_lap" viewers="vnteam" isFunction="0" isNested="0"></info>*/
 
 ALTER PROCEDURE dbo.SP_003
 AS
@@ -9,6 +9,7 @@ AS
 
 	Revisions:
 		- 20240205@Tacy: Initial SP [RedmineID: #000]
+		- 20240206@Jenny: Initial SP [RedmineID: #123]
 
 	Param's Explanation:
 
@@ -18,6 +19,6 @@ BEGIN
 	
 	SELECT 002 AS A
 
-	SELECT 003 AS B
+	SELECT 003 AS C
 END
 GO
