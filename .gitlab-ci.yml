@@ -4,5 +4,5 @@ include:
     file: nexcel.gitlab-ci.yml
 
 variables:
-  PROJECT_NAME: 'DB-Test'
-  ENABLE_SONAR_CHECK: 'true'
+#  PROJECT_NAME: 'DB-Test'
+#  ENABLE_SONAR_CHECK: 'true'
