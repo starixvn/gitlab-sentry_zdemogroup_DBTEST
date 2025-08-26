@@ -1,8 +1,8 @@
 include:
   - project: ci/core-cicd
-    ref: main
+    ref: dev
     file: nexcel.gitlab-ci.yml
 
 variables:
   PROJECT_NAME: 'DB-Test'
-  ENABLE_SONAR_CHECK: 'true'
+  ENABLE_SONAR_SQL: 'true'
