@@ -18,8 +18,12 @@ BEGIN
 	
 	SELECT 004 AS D
 
-	EXEC SP_003
+	--EXEC SP_003
 
 	WAITFOR DELAY '00:00:00.280'
+
+	select top 5 *
+	from Customer
+	order by creatdate
 END
 GO
